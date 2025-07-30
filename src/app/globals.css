@@ -1,0 +1,108 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+
+  .bg-gris-piedra {
+    background-color: var(--gris-piedra);
+  }
+
+  .bg-vino-sacerdotal {
+    background-color: var(--vino-sacerdotal);
+  }
+
+  .bg-rosa-santa-rosa {
+    background-color: var(--rosa-santa-rosa);
+  }
+
+  .bg-oro-liturgico {
+    background-color: var(--oro-liturgico);
+  }
+
+  .text-vino-sacerdotal {
+    color: var(--vino-sacerdotal);
+  }
+
+  .text-verde-esperanza {
+    color: var(--verde-esperanza);
+  }
+
+}
+
+:root {
+  /* Colores base */
+  --background: #F9F9F9;
+  --foreground: #2C2C2C;
+
+  /* Paleta parroquial */
+  --vino-sacerdotal: #7B1E3B;
+  --oro-liturgico: #C9A227;
+  --blanco-pureza: #F9F9F9;
+  --gris-piedra: #C0C0C0;
+  --negro-ceniza: #2C2C2C;
+  --verde-esperanza: #2C6E49;
+  --azul-cielo-turrucares: #4B9CD3;
+  --tierra-cafe-claro: #A67C52;
+  --rosa-santa-rosa: #E89CA2;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Utilidades base */
+/* h1,
+h2, */
+/* h3 {
+  color: var(--blanco-pureza);
+} */
+
+a {
+  color: var(--blanco-pureza);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.button-principal {
+  background-color: var(--oro-liturgico);
+  color: var(--blanco-pureza);
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.button-principal:hover {
+  background-color: var(--verde-esperanza);
+}
+
+.card {
+  background-color: var(--blanco-pureza);
+  border: 1px solid var(--gris-piedra);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-personalizado {
+  background-color: var(--vino-sacerdotal);
+  transition: background-color 0.3s ease;
+}
+
+.btn-personalizado:hover {
+  background-color: var(--oro-liturgico);
+}
