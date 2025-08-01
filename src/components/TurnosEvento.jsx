@@ -5,8 +5,8 @@ import { useParams } from 'next/navigation';
 import { toast } from 'react-toastify';
 import { CalendarPlus, Users, Clock3, UserPlus } from 'lucide-react';
 
-export default function TurnosEvento() {
-  const { eventoId } = useParams();
+export default function TurnosEvento({ eventoId }) {
+  //const { eventoId } = useParams();
   const [turnos, setTurnos] = useState([]);
   const [usuarios, setUsuarios] = useState([]);
   const [turnoSeleccionado, setTurnoSeleccionado] = useState(null);

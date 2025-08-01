@@ -112,7 +112,7 @@ export default function EventosLista() {
 
               <div className="mt-4 flex justify-between items-center">
                 <button
-                  onClick={() => router.push(`/turnos/${ev.id}`)}
+                  onClick={() => router.push(`/turnos/detalle?eventoId=${ev.id}`)}
                   className="text-blue-600 hover:text-blue-800 text-sm flex items-center gap-1"
                 >
                   <ArrowRight className="w-4 h-4" /> Ver turnos
